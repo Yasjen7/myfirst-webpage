@@ -1,0 +1,291 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header {
+    background: tomato;
+    height: 80px;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+ul { 
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  display: flex;
+  gap: 150px;
+  margin: 0;
+  padding: 0; 
+}
+
+.about {
+    background: lightgreen;
+    height: 80px;
+    font-family: cursive;
+}
+  
+.projects {
+    background: tomato;
+    height: 80px;
+    font-family: cursive;
+}  
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: deepskyblue;
+    height: 350px;
+    font-size: 17px;
+    font-family: cursive;
+}
+
+.skills{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background: rgb(93, 241, 233);
+    height: 350px;
+    font-size: 22px;
+    font-family: cursive;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resume{
+    background: lightseagreen;
+    color:whitesmoke;
+    height: 50px;
+    width: 30%;
+    border-color: gray;
+    border-radius: 20px;
+}
+button{
+    background: hotpink;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(23, 23, 23);
+    height: 70px;
+    border-radius: 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: lightgreen;
+    height: 80px;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    height: 400px;
+    padding: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: deepskyblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-self: normal;
+    background: rgb(0, 153, 156);
+    color: aliceblue;
+    height: 70px;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 27px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-instagram {
+    background: rgba(118, 0, 252, 0.594);
+    color: whitesmoke;
+    border-radius: 40px;
+    align-self: center;
+  }
+
+  .fa-linkedin {
+    background: goldenrod;
+    color: whitesmoke;
+    border-radius: 40px;
+    align-self: center;
+  }
+
+  .fa-google {
+    background: olivedrab;
+    color: oldlace;
+    border-radius: 40px;
+    align-self: center;
+  }
+
+.aside1 {
+    background: gold;
+    font-family: cursive;
+    font-size: 19px;
+    text-align: center;
+    display: flex;
+    border-radius: 70px;
+    height: 100%;
+}
+
+.aside2 {
+    background: hotpink;
+}
+
+.aside3 {
+    background: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.aside4 {
+    background: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.aside5 {
+    background: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.aside6 {
+    background: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.aside7 {
+    background: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.aside8 {
+    background: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.aside9 {
+    background: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.aside10 {
+    background: rgb(93, 241, 233);
+}
+
+@media all and (min-width: 800px){
+    .main{
+        flex: 3;
+    }
+
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 2;
+    }
+
+    .about{
+        order: 3;
+    }
+
+    .main{
+        order: 4;
+    }
+
+    .skills{
+        order: 5;
+    }
+
+    .projects{
+        order: 6;
+    }
+
+    .aside3{
+        order: 6;
+    }
+
+    .aside4{
+        order: 6;
+    }
+
+    .aside5{
+        order: 6;
+    }
+
+    .aside6{
+        order: 6;
+    }
+
+    .aside7{
+        order: 7;
+    }
+
+    .aside8{
+        order: 7;
+    }
+
+    .aside9{
+        order: 7;
+    }
+
+    button{
+        order: 7;
+    }
+
+    .contact{
+        order: 8;
+    }
+
+    .aside10{
+        order: 9;
+    }
+
+    .footer{
+        order: 10;
+    }
+}
+
+@media all and (min-width: 500px){
+    .aside{
+        flex: 3;
+    }
+}
